@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stock_summary
+    description: "Aggregated stock metrics including RSI, MA, daily changes, and volume analysis"
+    columns:
+      - name: symbol
+        description: "Stock ticker symbol"
+        tests:
+          - not_null
+      - name: date
+        description: "Date of the record"
+        tests:
+          - not_null
+      - name: rsi_14
+        description: "14-day RSI value"
+        tests:
+          - not_null
+      - name: ma_7
+        description: "7-day moving average"
+      - name: ma_14
+        description: "14-day moving average"
+      - name: daily_change
+        description: "Price change between open and close"
+      - name: percent_change
+        description: "Percent change from open to close"
+      - name: volume
+        description: "Trading volume"
+      - name: vol_rank
+        description: "Ranking of volume for the day"
+      - name: avg_week_close
+        description: "Average close price for the week"
+      - name: total_week_volume
+        description: "Total volume traded for the week"

@@ -1,0 +1,7 @@
+version: 2
+models:
+  - name: stock_rsi
+    description: "Calculates RSI (Relative Strength Index) over 14-day window"
+    columns:
+      - name: rsi_14
+        description: "The 14-day RSI value for each stock"

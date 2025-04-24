@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stock_summary_latest
+    description: "Latest available snapshot of each stock's summary metrics"
+    columns:
+      - name: symbol
+        description: "Stock ticker symbol"
+        tests:
+          - not_null
+          - unique
+      - name: date
+        description: "Most recent record date"
+        tests:
+          - not_null
