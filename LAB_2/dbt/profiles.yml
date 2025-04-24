@@ -1,0 +1,13 @@
+LAB_2:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: SFEDU02-KSB65579
+      user: FINCH
+      password: Ultrainstinct@221102
+      role: TRAINING_ROLE
+      database: USER_DB_FINCH
+      schema: ANALYTICS
+      warehouse: FINCH_QUERY_WH
+      threads: 1
